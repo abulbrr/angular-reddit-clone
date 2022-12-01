@@ -1,0 +1,12 @@
+ header{
+    border-radius: 1px solid;
+}
+.reddit-icon-svg{
+    height: 50px;
+    padding: 8px 8px 8px 0;
+    width: 50px;
+}
+
+.btn {
+    margin-right: 5px;
+}
