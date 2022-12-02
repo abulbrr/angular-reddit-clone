@@ -6,21 +6,22 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { AuthModule } from './auth/auth.module';
 import { HttpClientModule } from '@angular/common/http';
-import {NgxWebstorageModule} from 'ngx-webstorage';
+import { NgxWebstorageModule } from 'ngx-webstorage';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent
-      ],
+  declarations: [AppComponent, HeaderComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     AuthModule,
-    NgxWebstorageModule.forRoot()
+    NgxWebstorageModule.forRoot(),
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
